@@ -19,7 +19,7 @@ def lang_chek(lang, text, start, end):
     if text != '':
         for c in text:
             if c.isalpha():
-                if start <= ord(c.lower()) <= end or ord(c.lower()) == 1105:
+                if (start <= ord(c.lower()) <= end) or (lang == '1' and ord(c.lower()) == 1105):
                     continue
                 else:
                     return False
